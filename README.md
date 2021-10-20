@@ -9,6 +9,12 @@ This data analytics tool provides insights into the bikeshare user base. It prov
 * The most popular routes and start- and end points.
 * The average age of users making use of the service.
 
+### Prerequisites
+The prerequisites for this utility:
+
+* Python 3.6+
+* Pandas 0.18
+
 ### Files used
 The main utility is run from:
 
