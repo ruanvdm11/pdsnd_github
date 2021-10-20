@@ -325,19 +325,20 @@ def main():
             user_stats(df)
 
         row_count = 0
+        amount_raw_rows = 5
         while True:
 
             if row_count == 0:
-                trip_data = str(input("Would you like to view 5 rows of raw trip data? Enter yes or no.\n")).lower()
+                trip_data = str(input("Would you like to view {} rows of raw trip data? Enter yes or no.\n".format(amount_raw_rows))).lower()
             else:
-                trip_data = str(input("Would you like to view another 5 rows of raw trip data? Enter yes or no.\n")).lower()
+                trip_data = str(input("Would you like to view another {} rows of raw trip data? Enter yes or no.\n".format(amount_raw_rows))).lower()
             if trip_data == "yes":
-                if (row_count+5) < len(df.index)-1:
-                    for i in range(row_count,row_count+5):
+                if (row_count+amount_raw_rows) < len(df.index)-1:
+                    for i in range(row_count,row_count+amount_raw_rows):
                         print("\n{}\n".format(df.loc[row_count]))
                 else:
                     print("There are no more rows left.")
-                row_count+=5
+                row_count+=amount_raw_rows
             else:
                 break
 
