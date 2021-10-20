@@ -3,15 +3,25 @@
 ### Bikeshare Data Analysis Utility
 
 ### Description
-This data analytics tool provides insights into the bikeshare user base. It provides the user with an interactive console application that to track metrics like:
+This data analytics tool provides insights into the bikeshare user base. It provides the user with an interactive console application that provides metrics like:
 
 * Most popular time of day to use the bikeshare service.
 * The most popular routes and start- and end points.
 * The average age of users making use of the service.
 
 ### Files used
-Include the files used
+The main utility is run from:
+
+* bikeshare.py
+
+This main utility references certain csv datasets:
+
+* washington.csv
+* new_york_city.csv
+* chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+To ensure good user experience the following post allowed functionality to be created that circumvents minor typos from the user.
+
+* [Similarity Metric Between Two Strings](https://stackoverflow.com/questions/17388213/find-the-similarity-metric-between-two-strings)
 
