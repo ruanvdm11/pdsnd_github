@@ -127,6 +127,7 @@ def get_filters():
     print("\nGreat! you chose: {}\n".format(city.title()))
 
     # get filter information from the user
+    # This function has 'guess' functionality. This will evaluate the user input according to correct inputs and make suggestions if typos are encountered.
     while True:
         user_filter = str(input("Would you like to apply a filter? Please type month, day, both or none\n")).lower().strip()
         if user_filter in FILTER_DATA:
