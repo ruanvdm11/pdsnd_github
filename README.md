@@ -3,7 +3,11 @@
 ### Bikeshare Data Analysis Utility
 
 ### Description
-Describe what your project is about and what it does
+This data analytics tool provides insights into the bikeshare user base. It provides the user with an interactive console application that to track metrics like:
+
+* Most popular time of day to use the bikeshare service.
+* The most popular routes and start- and end points.
+* The average age of users making use of the service.
 
 ### Files used
 Include the files used
